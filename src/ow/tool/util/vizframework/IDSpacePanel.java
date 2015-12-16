@@ -17,11 +17,7 @@
 
 package ow.tool.util.vizframework;
 
-import java.awt.Color;
-import java.awt.Dimension;
-import java.awt.Graphics;
-import java.awt.Graphics2D;
-import java.awt.Shape;
+import java.awt.*;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import java.awt.event.MouseEvent;
@@ -336,6 +332,9 @@ public class IDSpacePanel extends JComponent implements KeyListener, MouseListen
 			}
 
 			this.offScreenGraphics.setStroke(this.imageManager.getStrokeForMessaging());
+
+			// add anti aliasing support
+			this.offScreenGraphics.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
 		}
 
 		this.vizFrame.imageToBeUpdated(true);
