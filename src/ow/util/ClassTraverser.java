@@ -24,11 +24,11 @@ import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import com.sun.org.apache.bcel.internal.classfile.ClassParser;
-import com.sun.org.apache.bcel.internal.classfile.Constant;
-import com.sun.org.apache.bcel.internal.classfile.ConstantClass;
-import com.sun.org.apache.bcel.internal.classfile.ConstantPool;
-import com.sun.org.apache.bcel.internal.classfile.JavaClass;
+import org.apache.bcel.classfile.ClassParser;
+import org.apache.bcel.classfile.Constant;
+import org.apache.bcel.classfile.ConstantClass;
+import org.apache.bcel.classfile.ConstantPool;
+import org.apache.bcel.classfile.JavaClass;
 
 /**
  * A utility to traverse class dependency.
